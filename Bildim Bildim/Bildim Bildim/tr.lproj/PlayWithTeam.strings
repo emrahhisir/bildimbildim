@@ -1,0 +1,12 @@
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "AHB-vi-5ih"; */
+"AHB-vi-5ih.normalTitle" = "DEVAM ET";
+
+/* Class = "UILabel"; text = "Teams"; ObjectID = "GVp-Fm-LPJ"; */
+"GVp-Fm-LPJ.text" = "Takımlar";
+
+/* Class = "UILabel"; text = "VERSUS"; ObjectID = "WcQ-D8-fTL"; */
+"WcQ-D8-fTL.text" = "TAKIMA KARŞI OYNA";
+
+/* Class = "UILabel"; text = "Rounds"; ObjectID = "cHP-cM-b05"; */
+"cHP-cM-b05.text" = "Tur Sayısı";
+

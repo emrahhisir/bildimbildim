@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="all" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Bildim_Bildim" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="AHB-vi-5ih" id="IOS-12-Tsy"/>
+                <outlet property="popupView" destination="avk-Mh-dmy" id="mvT-3N-gxK"/>
+                <outlet property="roundSelection" destination="odK-8A-Gk1" id="4R3-cD-Xgo"/>
+                <outlet property="teamSelection" destination="vXs-qq-3Gu" id="Ovk-xi-vbm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="top" id="iN0-l3-epB" customClass="BBPopupView" customModule="Bildim_Bildim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="avk-Mh-dmy">
+                    <rect key="frame" x="150" y="50" width="300" height="500"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VERSUS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcQ-D8-fTL">
+                            <rect key="frame" x="110" y="10" width="80" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rounds" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHP-cM-b05">
+                            <rect key="frame" x="120" y="243" width="60" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="odK-8A-Gk1">
+                            <rect key="frame" x="116" y="266" width="68" height="29"/>
+                            <segments>
+                                <segment title="3"/>
+                                <segment title="5"/>
+                                <segment title="7"/>
+                            </segments>
+                            <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </segmentedControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teams" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVp-Fm-LPJ">
+                            <rect key="frame" x="125" y="183" width="50" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="vXs-qq-3Gu">
+                            <rect key="frame" x="116" y="206" width="68" height="29"/>
+                            <segments>
+                                <segment title="2"/>
+                                <segment title="3"/>
+                                <segment title="4"/>
+                            </segments>
+                            <color key="tintColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="AHB-vi-5ih">
+                            <rect key="frame" x="10" y="455" width="280" height="35"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="AHB-vi-5ih" secondAttribute="height" multiplier="8:1" id="mDj-48-KMb"/>
+                            </constraints>
+                            <state key="normal" title="CONTINUE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickedContinueForTeamSelection:" destination="-1" eventType="touchUpInside" id="UMd-iC-3kz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerX" secondItem="odK-8A-Gk1" secondAttribute="centerX" id="3OD-4W-8kR"/>
+                        <constraint firstAttribute="trailing" secondItem="AHB-vi-5ih" secondAttribute="trailing" constant="10" id="4PQ-gw-uJL"/>
+                        <constraint firstAttribute="centerX" secondItem="AHB-vi-5ih" secondAttribute="centerX" id="5JH-cR-L7z"/>
+                        <constraint firstAttribute="centerX" secondItem="GVp-Fm-LPJ" secondAttribute="centerX" id="7Ng-wI-ntA"/>
+                        <constraint firstAttribute="centerX" secondItem="cHP-cM-b05" secondAttribute="centerX" id="AgY-LN-ELQ"/>
+                        <constraint firstAttribute="bottom" secondItem="AHB-vi-5ih" secondAttribute="bottom" constant="10" id="HmS-s8-6ka"/>
+                        <constraint firstAttribute="centerY" secondItem="vXs-qq-3Gu" secondAttribute="centerY" constant="30" id="JFg-3Q-hcq"/>
+                        <constraint firstAttribute="centerY" secondItem="odK-8A-Gk1" secondAttribute="centerY" constant="-30" id="L6N-ez-5NK"/>
+                        <constraint firstAttribute="centerX" secondItem="WcQ-D8-fTL" secondAttribute="centerX" id="Rjf-FN-Wrf"/>
+                        <constraint firstItem="odK-8A-Gk1" firstAttribute="top" secondItem="cHP-cM-b05" secondAttribute="bottom" constant="2" id="S9a-jS-xzy"/>
+                        <constraint firstAttribute="centerX" secondItem="vXs-qq-3Gu" secondAttribute="centerX" id="V44-mX-qnM"/>
+                        <constraint firstItem="AHB-vi-5ih" firstAttribute="leading" secondItem="avk-Mh-dmy" secondAttribute="leading" constant="10" id="WsF-L4-OPX"/>
+                        <constraint firstItem="WcQ-D8-fTL" firstAttribute="top" secondItem="avk-Mh-dmy" secondAttribute="top" constant="10" id="f4W-f7-wxW"/>
+                        <constraint firstItem="vXs-qq-3Gu" firstAttribute="top" secondItem="GVp-Fm-LPJ" secondAttribute="bottom" constant="2" id="mmJ-Wx-H64"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="avk-Mh-dmy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="150" id="CnP-s7-zFT"/>
+                <constraint firstAttribute="centerX" secondItem="avk-Mh-dmy" secondAttribute="centerX" id="H5c-b2-8mL"/>
+                <constraint firstItem="avk-Mh-dmy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="50" id="R0O-KO-aj7"/>
+                <constraint firstAttribute="trailing" secondItem="avk-Mh-dmy" secondAttribute="trailing" constant="150" id="Vbb-ps-92i"/>
+                <constraint firstAttribute="bottom" secondItem="avk-Mh-dmy" secondAttribute="bottom" constant="50" id="b69-mo-cbD"/>
+                <constraint firstAttribute="centerY" secondItem="avk-Mh-dmy" secondAttribute="centerY" id="oVk-wx-HH3"/>
+            </constraints>
+            <point key="canvasLocation" x="320" y="329.5"/>
+        </view>
+    </objects>
+</document>

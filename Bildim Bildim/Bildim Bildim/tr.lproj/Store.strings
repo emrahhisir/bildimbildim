@@ -1,0 +1,12 @@
+/* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "6ZQ-bG-IrE"; */
+"6ZQ-bG-IrE.normalTitle" = "Geri Yükle";
+
+/* Class = "UIButton"; normalTitle = "Buy"; ObjectID = "7K1-SJ-E9H"; */
+"7K1-SJ-E9H.normalTitle" = "Satın Al";
+
+/* Class = "UILabel"; text = "STORE"; ObjectID = "Xhf-Ur-rhW"; */
+"Xhf-Ur-rhW.text" = "MAĞAZA";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "qkH-SW-IF9"; */
+"qkH-SW-IF9.normalTitle" = "DEVAM ET";
+

@@ -1,0 +1,18 @@
+/* Class = "UILabel"; text = "Bonus Time:"; ObjectID = "9E2-iY-cqt"; */
+"9E2-iY-cqt.text" = "Bonus Süre:";
+
+/* Class = "UILabel"; text = "SETTINGS"; ObjectID = "Xhf-Ur-rhW"; */
+"Xhf-Ur-rhW.text" = "AYARLAR";
+
+/* Class = "UILabel"; text = "Video Record:"; ObjectID = "ccD-jO-s05"; */
+"ccD-jO-s05.text" = "Video Kayıt:";
+
+/* Class = "UILabel"; text = "Sound:"; ObjectID = "pKW-EM-4jJ"; */
+"pKW-EM-4jJ.text" = "Ses:";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "qkH-SW-IF9"; */
+"qkH-SW-IF9.normalTitle" = "DEVAM ET";
+
+/* Class = "UILabel"; text = "Round Time:"; ObjectID = "rzn-sT-2hl"; */
+"rzn-sT-2hl.text" = "Tur Süresi:";
+

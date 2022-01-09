@@ -1,0 +1,9 @@
+/* Class = "UIButton"; normalTitle = "END"; ObjectID = "WGa-2D-Z7Q"; */
+"WGa-2D-Z7Q.normalTitle" = "SONLANDIR";
+
+/* Class = "UILabel"; text = "PAUSED"; ObjectID = "Xhf-Ur-rhW"; */
+"Xhf-Ur-rhW.text" = "OYUN DURDURULDU";
+
+/* Class = "UIButton"; normalTitle = "CONTINUE"; ObjectID = "qkH-SW-IF9"; */
+"qkH-SW-IF9.normalTitle" = "DEVAM ET";
+

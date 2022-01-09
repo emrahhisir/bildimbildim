@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="all" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategorySelectViewController" customModule="Bildim_Bildim" customModuleProvider="target">
+            <connections>
+                <outlet property="containerView" destination="Nfp-Xy-L7l" id="6R6-NR-KA8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="rvF-BN-cN4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="top" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="89x-Ov-f4v">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nfp-Xy-L7l">
+                            <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="600" placeholder="YES" id="nkw-LI-wlQ"/>
+                                <constraint firstAttribute="width" constant="400" placeholder="YES" id="oYT-PI-zTb"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Nfp-Xy-L7l" secondAttribute="trailing" id="KEE-Jt-835"/>
+                        <constraint firstItem="Nfp-Xy-L7l" firstAttribute="top" secondItem="89x-Ov-f4v" secondAttribute="top" id="bB1-2e-07R"/>
+                        <constraint firstItem="Nfp-Xy-L7l" firstAttribute="leading" secondItem="89x-Ov-f4v" secondAttribute="leading" id="jEG-Km-3DN"/>
+                        <constraint firstAttribute="bottom" secondItem="Nfp-Xy-L7l" secondAttribute="bottom" id="ue9-2N-pYn"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="89x-Ov-f4v" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7W2-mO-YWG"/>
+                <constraint firstAttribute="bottom" secondItem="89x-Ov-f4v" secondAttribute="bottom" id="ENC-Zl-FiI"/>
+                <constraint firstAttribute="trailing" secondItem="89x-Ov-f4v" secondAttribute="trailing" id="g5t-38-E29"/>
+                <constraint firstItem="89x-Ov-f4v" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="puv-Lg-Mjh"/>
+            </constraints>
+            <point key="canvasLocation" x="291" y="464"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SummaryResultViewController" customModule="Bildim_Bildim" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="bxD-vQ-Sbo" id="ofD-I1-Lkg"/>
+                <outlet property="nextLabel" destination="EOH-a3-ug5" id="vcP-fv-qOT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="6LN-gZ-bHg"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bxD-vQ-Sbo">
+                    <rect key="frame" x="0.0" y="60" width="600" height="540"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="Q2V-CV-eRc">
+                        <size key="itemSize" width="110" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="WNK-5t-Dih"/>
+                        <outlet property="delegate" destination="-1" id="ukl-xc-n0Y"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHp-lU-fRT">
+                    <rect key="frame" x="550" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="yHp-lU-fRT" secondAttribute="height" multiplier="1:1" id="7TD-rJ-kQG"/>
+                        <constraint firstAttribute="width" constant="40" id="KUE-N3-ypt"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="next.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="pressedBack:" destination="-1" eventType="touchUpInside" id="39m-bA-5Ru"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOH-a3-ug5">
+                    <rect key="frame" x="509" y="20" width="36" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bxD-vQ-Sbo" secondAttribute="trailing" id="27w-t8-eI6"/>
+                <constraint firstItem="bxD-vQ-Sbo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="60" id="Gb8-sY-HRf"/>
+                <constraint firstItem="yHp-lU-fRT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="Kx0-hf-EQP"/>
+                <constraint firstItem="bxD-vQ-Sbo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="MtP-fY-hKX"/>
+                <constraint firstAttribute="bottom" secondItem="bxD-vQ-Sbo" secondAttribute="bottom" id="Z3u-R9-Fog"/>
+                <constraint firstItem="yHp-lU-fRT" firstAttribute="width" secondItem="bxD-vQ-Sbo" secondAttribute="width" multiplier="1:15" id="Zw4-W2-uKn"/>
+                <constraint firstItem="yHp-lU-fRT" firstAttribute="centerY" secondItem="EOH-a3-ug5" secondAttribute="centerY" id="osz-hL-aiE"/>
+                <constraint firstAttribute="trailing" secondItem="yHp-lU-fRT" secondAttribute="trailing" constant="10" id="tNK-VW-FM6"/>
+                <constraint firstItem="yHp-lU-fRT" firstAttribute="leading" secondItem="EOH-a3-ug5" secondAttribute="trailing" constant="5" id="zCt-Wm-lfj"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Zw4-W2-uKn"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="next.png" width="256" height="256"/>
+    </resources>
+</document>

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Bildim Bildim
+
+  Created by Emrah Hisir on 12/25/14.
+  Copyright (c) 2014 Emrah Hisir. All rights reserved.
+*/
+"Loading" = "Loading...";
+"Menu-Settings" = "Settings";
+"Menu-Home" = "Home";
+"Menu-All" = "All";
+"Menu-New" = "New";
+"Menu-Favourites" = "Favourites";
+"Menu-Store" = "Store";
+"SelectAllCategory" = "Select All";
+"RandomCategory" = "Random";
+"PlayIntroTitle" = "Hold device upright (vertical) and play start in 5 seconds";
+"PlayError" = "Hold device to continue play";
+"CorrectAnswer" = "CORRECT";
+"PassAnswer" = "PASS";
+"Back" = "Back";
+"Team" = "Team";
+"Round" = "Round";
+"Next" = "Next";
+"Alert" = "Alert";
+"NoCategoryFound" = "Please turn on internet to download the categories just initially";
+"OK" = "OK";
+"NoQuestionError" = "No question found in this category";
+"VideoRecordMessage" = "You can see the recorded video in Camera Roll";
+"RemoveAdTitle" = "Remove Ads: ";
+"StoreNoConnectionError" = "Check the internet connection";

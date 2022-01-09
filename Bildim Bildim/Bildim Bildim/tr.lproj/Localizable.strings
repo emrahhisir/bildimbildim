@@ -1,0 +1,27 @@
+/* Load view */
+"Loading" = "Yükleniyor...";
+"Menu-Settings" = "Ayarlar";
+"Menu-Home" = "Ana Sayfa";
+"Menu-All" = "Tüm Kategoriler";
+"Menu-New" = "Yeni";
+"Menu-Favourites" = "Favoriler";
+"Menu-Store" = "Mağaza";
+"On" = "Açık";
+"Off" = "Kapalı";
+"SelectAllCategory" = "Hepsini Seç";
+"RandomCategory" = "Rastgele Seç";
+"PlayIntroTitle" = "Cihaz ekranını dik konuma getirince oyun 5 saniye sonra başlayacaktır";
+"PlayError" = "Oyuna devam etmek için cihaz ekranını dik konuma getiriniz";
+"CorrectAnswer" = "DOĞRU";
+"PassAnswer" = "PAS";
+"Back" = "Geri";
+"Team" = "Takım";
+"Round" = "Tur";
+"Next" = "İleri";
+"Alert" = "Uyarı";
+"NoCategoryFound" = "Sadece başlangıçta kategori dosyalarını indirmek için lütfen internetinizi açınız";
+"OK" = "Tamam";
+"NoQuestionError" = "Bu kategori altında soru bulunmamaktadır";
+"VideoRecordMessage" = "Kaydedilen videoya Film Rulosundan bakabilirsiniz";
+"RemoveAdTitle" = "Reklamı Kaldır: ";
+"StoreNoConnectionError" = "Internet bağlantınızı kontrol ediniz";

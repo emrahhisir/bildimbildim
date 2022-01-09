@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="all" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideBarMenuViewController" customModule="Bildim_Bildim" customModuleProvider="target">
+            <connections>
+                <outlet property="continueButton" destination="qkH-SW-IF9" id="xRs-lm-0ko"/>
+                <outlet property="removeAdBuyButton" destination="7K1-SJ-E9H" id="3Lh-IQ-ir5"/>
+                <outlet property="removeAdTitle" destination="MD2-Pm-O9S" id="7OP-rk-9Ul"/>
+                <outlet property="restoreButton" destination="6ZQ-bG-IrE" id="R83-ed-qgJ"/>
+                <outlet property="storePopupView" destination="vIM-WT-TYg" id="RUr-i1-Rx0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="top" id="bua-vA-IyB" customClass="BBPopupView" customModule="Bildim_Bildim" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIM-WT-TYg">
+                    <rect key="frame" x="50" y="25" width="500" height="550"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-SJ-E9H">
+                            <rect key="frame" x="227" y="115" width="47" height="18"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Buy"/>
+                            <connections>
+                                <action selector="buyRemoveAdProduct:" destination="-1" eventType="touchUpInside" id="cea-cm-Gf4"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STORE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xhf-Ur-rhW">
+                            <rect key="frame" x="217" y="10" width="67" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="qkH-SW-IF9">
+                            <rect key="frame" x="10" y="480" width="480" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="qkH-SW-IF9" secondAttribute="height" multiplier="8:1" id="2sw-VL-LEO"/>
+                            </constraints>
+                            <state key="normal" title="CONTINUE">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressedStoreContinueButton:" destination="-1" eventType="touchUpInside" id="nTX-Kl-Ane"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Remove Ads: 2.99$" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MD2-Pm-O9S">
+                            <rect key="frame" x="175" y="84" width="151" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ZQ-bG-IrE">
+                            <rect key="frame" x="214" y="459" width="73" height="18"/>
+                            <color key="tintColor" red="1" green="0.12795100365890877" blue="0.31381464519748958" alpha="1" colorSpace="calibratedRGB"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                            <state key="normal" title="Restore"/>
+                            <connections>
+                                <action selector="restoreTapped:" destination="-1" eventType="touchUpInside" id="8Rj-Yg-oRh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="MD2-Pm-O9S" firstAttribute="top" secondItem="Xhf-Ur-rhW" secondAttribute="bottom" constant="50" id="0q5-8q-wR5"/>
+                        <constraint firstAttribute="trailing" secondItem="qkH-SW-IF9" secondAttribute="trailing" constant="10" id="7ao-CO-Xca"/>
+                        <constraint firstItem="MD2-Pm-O9S" firstAttribute="top" secondItem="Xhf-Ur-rhW" secondAttribute="bottom" constant="50" id="A40-0X-6bE"/>
+                        <constraint firstAttribute="centerX" secondItem="qkH-SW-IF9" secondAttribute="centerX" id="D0O-EY-Ix6"/>
+                        <constraint firstItem="Xhf-Ur-rhW" firstAttribute="top" secondItem="vIM-WT-TYg" secondAttribute="top" constant="10" id="J7s-N9-CSZ"/>
+                        <constraint firstAttribute="centerX" secondItem="6ZQ-bG-IrE" secondAttribute="centerX" id="PgZ-1r-M9T"/>
+                        <constraint firstAttribute="bottom" secondItem="qkH-SW-IF9" secondAttribute="bottom" constant="10" id="Vvm-tX-zB0"/>
+                        <constraint firstItem="qkH-SW-IF9" firstAttribute="leading" secondItem="vIM-WT-TYg" secondAttribute="leading" constant="10" id="eIO-bx-aNi"/>
+                        <constraint firstItem="7K1-SJ-E9H" firstAttribute="top" secondItem="MD2-Pm-O9S" secondAttribute="bottom" constant="10" id="edM-Cy-n4D"/>
+                        <constraint firstAttribute="centerX" secondItem="7K1-SJ-E9H" secondAttribute="centerX" id="lcF-Lh-P9S"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="qkH-SW-IF9" secondAttribute="bottom" constant="10" id="rKC-aD-Rmc"/>
+                        <constraint firstAttribute="centerX" secondItem="Xhf-Ur-rhW" secondAttribute="centerX" id="s2a-mF-vaD"/>
+                        <constraint firstItem="qkH-SW-IF9" firstAttribute="top" secondItem="6ZQ-bG-IrE" secondAttribute="bottom" constant="3" id="wOD-Ik-xrm"/>
+                        <constraint firstAttribute="centerX" secondItem="MD2-Pm-O9S" secondAttribute="centerX" id="xbj-hN-DUc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="vIM-WT-TYg" secondAttribute="centerX" id="FG4-ZT-NRV"/>
+                <constraint firstAttribute="centerY" secondItem="vIM-WT-TYg" secondAttribute="centerY" id="Fpi-1k-duZ"/>
+                <constraint firstItem="vIM-WT-TYg" firstAttribute="leading" secondItem="bua-vA-IyB" secondAttribute="leading" constant="50" id="GiC-Ma-pnS"/>
+                <constraint firstAttribute="bottom" secondItem="vIM-WT-TYg" secondAttribute="bottom" constant="25" id="egt-i4-a4q"/>
+                <constraint firstItem="vIM-WT-TYg" firstAttribute="top" secondItem="bua-vA-IyB" secondAttribute="top" constant="25" id="pR6-oY-e9c"/>
+                <constraint firstAttribute="trailing" secondItem="vIM-WT-TYg" secondAttribute="trailing" constant="50" id="xXY-NH-mT3"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
